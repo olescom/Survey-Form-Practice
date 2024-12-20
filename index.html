@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="survey-form">
+    <h1 id="title">Rate My Survey Form</h1>
+    <p id="description">Thank you for looking at my code. Hopefully, it's good!</p>
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+    </div>
+    <div>
+      <label for="number">Age</label>
+      <input id="number" type="number" placeholder="Enter your age" min="18" max="120">
+    </div>
+    <div>
+      <label for="dropdown">Rate My Survey Form</label>
+      <select id="dropdown">
+        <option disabled selected value>Select an option</option>
+        <option>Everything looks good</option>
+        <option>Needs a bit of work</option>
+        <option>Terrible, needs a lot of work</option>
+      </select>
+    </div>
+    <div>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label><input type="radio" name="recommend" value="yes"> Yes</label>
+      <label><input type="radio" name="recommend" value="no"> No</label>
+    </div>
+    <div>
+      <p>Do you enjoy coding?</p>
+      <label><input type="checkbox" value="yes"> Yes</label>
+      <label><input type="checkbox" value="no"> No</label>
+    </div>
+    <div>
+      <label for="comments">Comments</label>
+      <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body stretches to fill the viewport */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+#survey-form {
+    background: #fff;
+    padding: 30px; /* Slightly increase padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow for depth */
+    max-width: 500px;
+    width: 100%; /* Allow responsiveness */
+    min-width: 320px; /* Prevent the form from becoming too narrow */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin: 20px; /* Add some spacing around the form */
+}
+
+h1 {
+    font-size: 2rem; /* Larger font for the main heading */
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+#description {
+    font-size: 1rem;
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select, textarea, button {
+    width: 100%; /* Ensures uniform element width */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+#dropdown {
+    margin-top: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Optional: Improve spacing between grouped elements */
+div {
+    margin-bottom: 15px; /* Adds spacing between form sections */
+}
